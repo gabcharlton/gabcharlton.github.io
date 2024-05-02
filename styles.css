@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #ace7ef;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -13,10 +13,11 @@ header {
 
 section {
     padding: 20px;
+    background-color: #cefff1;
 }
 
 footer {
-    background-color: #333;
+    background-color: #a6acec;
     color: #fff;
     text-align: center;
     padding: 10px 0;
