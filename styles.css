@@ -18,7 +18,7 @@ header {
 
 .buttons .btn {
   display: inline-block;
-  background: blue;
+  background: #CEC9EC;
   color: white;
   padding: 10px 20px;
   margin: 10px;
@@ -28,7 +28,7 @@ header {
 }
 
 .buttons .btn:hover {
-  background: pink;
+  background: #F0CFEB;
 }
 
 footer {
@@ -50,14 +50,14 @@ body {
 .lofi-widget {
   width: 300px;
   border: 2px solid #ffffff;
-  background: #4c4c4c;
-  box-shadow: 5px 5px 0 #000000;
+  background: #c4e6c3;
+  box-shadow: 5px 5px 0 #A4BFEA;
   font-size: 14px;
   position: relative;
 }
 
 .widget-header {
-  background: #000080;
+  background: #1d4f60;
   color: white;
   padding: 5px;
   display: flex;
@@ -70,7 +70,7 @@ body {
 }
 
 #minimize-btn {
-  background: #800000;
+  background: #feb3d1;
   color: white;
   border: none;
   cursor: pointer;
