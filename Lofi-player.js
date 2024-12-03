@@ -39,3 +39,17 @@ shuffleBtn.addEventListener('click', () => {
 volumeSlider.addEventListener('input', (e) => {
   audioPlayer.volume = e.target.value;
 });
+
+const nowPlaying = document.getElementById('now-playing');
+function updateTrackName() {
+  const trackName = tracks[currentTrack].split('/').pop().replace('.mp3', '');
+  nowPlaying.textContent = `Now Playing: ${trackName}`;
+}
+
+audioPlayer.addEventListener('play', updateTrackName);
+audioPlayer.addEventListener('ended', () => {
+  currentTrack = (currentTrack + 1) % tracks.length; // Auto next track
+  audioPlayer.src = tracks[currentTrack];
+  audioPlayer.play();
+  updateTrackName();
+});
