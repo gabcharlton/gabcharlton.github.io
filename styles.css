@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, lavender, pink);
+  background: linear-gradient(180deg, #5FAEE1, #F0CFEB);
   color: white;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ header {
 
 .buttons .btn {
   display: inline-block;
-  background: #CEC9EC;
+  background: #7e86b0;
   color: white;
   padding: 10px 20px;
   margin: 10px;
