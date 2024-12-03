@@ -36,17 +36,6 @@ footer {
   padding: 10px 0;
 }
 
-body {
-  background: linear-gradient(135deg, lavender, pink);
-  font-family: 'Courier New', monospace;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
 .lofi-widget {
   width: 300px;
   border: 2px solid #ffffff;
