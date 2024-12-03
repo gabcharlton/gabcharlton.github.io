@@ -28,7 +28,7 @@ header {
 }
 
 .buttons .btn:hover {
-  background: #F0CFEB;
+  background: #ffd04f;
 }
 
 footer {
@@ -50,8 +50,8 @@ body {
 .lofi-widget {
   width: 300px;
   border: 2px solid #ffffff;
-  background: #c4e6c3;
-  box-shadow: 5px 5px 0 #A4BFEA;
+  background: #80c799;
+  box-shadow: 10px 10px 0 #A4BFEA;
   font-size: 14px;
   position: relative;
 }
@@ -96,7 +96,7 @@ body {
 #track-list {
   margin-top: 10px;
   font-size: 12px;
-  color: #ccc;
+  color: white;
 }
 
 .hidden {
