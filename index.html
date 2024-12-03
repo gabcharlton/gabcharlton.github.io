@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabrielle Charlton</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabrielle Charlton</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Gabrielle Charlton</h1>
-</header>
+    <p>Aspiring Data Scientist | Pixel Art Enthusiast</p>
+  </header>
+  <main>
+    <section class="gif-container">
+      <img src="Cottagecore cutie1.gif" alt="Pixel Art GIF">
+    </section>
+    <section class="buttons">
+      <a href="https://www.linkedin.com/in/gabcharlton/" class="btn">LinkedIn</a>
+      <a href="https://github.com/gabcharlton" class="btn">GitHub</a>
+      <a href="https://www.kaggle.com/gabriellecharlton" class="btn">Kaggle</a>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Gabrielle Charlton. All rights reserved.</p>
+  </footer>
 
-<section>
-    <h2>Welcome to my website!</h2>
-    <img src='Cottagecore cutie1.gif'>
-    
-    <p>👋 Hi, I’m Gabrielle Charlton. <br>
-<ul>👀 I’m interested in data science, cozy games, and gardening <br></ul>
-<ul>🌱 I’m currently studying towards my Msc. in Data Science at Colorado Boulder University. <br></ul>
-<ul>💞️ I’m looking to collaborate on large dataset analysis and gain practical experience on projects. Also currently working on my first indie cozy game! <br></ul>
-📫How to reach me: <a href="https://github.com/gabcharlton"> GitHub</a> , <a href="https://www.kaggle.com/gabriellecharlton"> Kaggle</a>, and <a href="https://www.linkedin.com/in/gabcharlton/"> LinkedIn</a>.</p> <br>
-    
-</section>
-    
-
-<footer>
-    <p> 2024 Gabrielle Charlton</p>
-</footer>
+  <div id="lofi-player" class="lofi-widget">
+  <div class="widget-header">
+    <span class="widget-title">Lo-fi Beats</span>
+    <button id="minimize-btn">_</button>
+  </div>
+  <div class="widget-body">
+    <audio id="audio-player" src="track1.mp3"></audio>
+    <div class="controls">
+      <button id="play-btn">▶</button>
+      <button id="shuffle-btn">🔀</button>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.1">
+    </div>
+    <div id="track-list">
+      <p>Aesthetic Groove - Lofi Breno</p>
+      <p>Tape Vibes - Lofi Breno</p>
+      <p>Timed - Lofi Breno</p>
+    </div>
+    <div id="now-playing"></div>
+  </div>
+</div>
 
 </body>
 </html>

@@ -1,28 +1,118 @@
 body {
-    font-family: Courier, monospace;
-    margin: 0;
-    padding: 0;
-    background-color:#ace7ef;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, lavender, pink);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 header {
-    background-color:#d9c0dc;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
 }
 
-section {
-    padding: 20px;
-    background-color: #a6acec;
+.gif-container img {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.buttons .btn {
+  display: inline-block;
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.buttons .btn:hover {
+  background: pink;
 }
 
 footer {
-    background-color: #cefff1;
-    color: #000;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  margin-top: 30px;
+  padding: 10px 0;
 }
+
+body {
+  background: linear-gradient(135deg, lavender, pink);
+  font-family: 'Courier New', monospace;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.lofi-widget {
+  width: 300px;
+  border: 2px solid #ffffff;
+  background: #4c4c4c;
+  box-shadow: 5px 5px 0 #000000;
+  font-size: 14px;
+  position: relative;
+}
+
+.widget-header {
+  background: #000080;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-title {
+  font-weight: bold;
+}
+
+#minimize-btn {
+  background: #800000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.widget-body {
+  padding: 10px;
+}
+
+.controls button {
+  background: #000080;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#volume-slider {
+  width: 80%;
+}
+
+#track-list {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+  display: none;
+}
+.loading.active {
+  display: block;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
