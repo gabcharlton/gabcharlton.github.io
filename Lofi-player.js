@@ -53,3 +53,7 @@ audioPlayer.addEventListener('ended', () => {
   audioPlayer.play();
   updateTrackName();
 });
+
+audioPlayer.volume = 0.5; // 50% volume
+volumeSlider.value = 0.5;
+
