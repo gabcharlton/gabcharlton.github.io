@@ -70,7 +70,7 @@ body {
 }
 
 #minimize-btn {
-  background: #feb3d1;
+  background: #7e86b0;
   color: white;
   border: none;
   cursor: pointer;
@@ -81,7 +81,7 @@ body {
 }
 
 .controls button {
-  background: #000080;
+  background: #7e86b0;
   color: white;
   border: none;
   padding: 5px 10px;
