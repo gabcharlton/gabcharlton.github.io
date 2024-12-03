@@ -6,9 +6,9 @@ const volumeSlider = document.getElementById('volume-slider');
 const audioPlayer = document.getElementById('audio-player');
 
 const tracks = [
-  'track1.mp3',
-  'track2.mp3',
-  'track3.mp3'
+  'https://github.com/gabcharlton/gabcharlton.github.io/blob/09ae167869c35a943229cb5a70937a0097a98741/Lofi%20Breno%20-%20Aesthetic%20Groove%20%5BThematic%5D.mp3',
+  'https://github.com/gabcharlton/gabcharlton.github.io/blob/09ae167869c35a943229cb5a70937a0097a98741/Lofi%20Breno%20-%20Tape%20Vibes%20%5BThematic%5D.mp3',
+  'https://github.com/gabcharlton/gabcharlton.github.io/blob/09ae167869c35a943229cb5a70937a0097a98741/Lofi%20Breno%20-%20Timed%20%5BThematic%5D.mp3'
 ];
 let currentTrack = 0;
 let isPlaying = false;
