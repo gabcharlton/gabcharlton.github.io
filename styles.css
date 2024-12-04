@@ -63,7 +63,9 @@ footer {
   border: none;
   cursor: pointer;
 }
-
+#minimize-btn:hover {
+  background: #ffd04f;
+}
 .widget-body {
   padding: 10px;
 }
@@ -75,6 +77,10 @@ footer {
   padding: 5px 10px;
   margin-right: 5px;
   cursor: pointer;
+}
+
+.controls button:hover {
+  background: #ffd04f;
 }
 
 #volume-slider {
