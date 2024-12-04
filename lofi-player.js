@@ -9,8 +9,8 @@ const lofiPlayer = document.getElementById('lofi-player');
 // Tracks
 const tracks = [
   'audio/lofi_breno-aesthetic_groove _thematic.mp3',
-  'audio/lofi_breno-tape-vibes.mp3',
-  'audio/lofi_breno-timed.mp3'
+  'audio/lofi_breno-tape_vibes_thematic.mp3',
+  'audio/lofi_breno-timed_thematic.mp3.mp3'
 ];
 let currentTrack = 0;
 
