@@ -48,21 +48,6 @@ footer {
   position: relative;
 }
 
-@media (max-width: 600px) {
-  body {
-    text-align: left; /* Prevent overcrowding */
-    padding: 10px;
-  }
-  .gif-container img {
-    width: 150px;
-  }
-  .lofi-widget {
-    width: 100%;
-    box-shadow: none;
-  }
-}
-
-
 .widget-header {
   background: #af7a73;
   color: white;
@@ -149,5 +134,97 @@ footer {
 .loading.active {
   display: block;
   animation: spin 2s linear infinite;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-box {
+  width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border: 3px solid #feb3d1; /* Pink outline */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8); /* Beveled effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-10px); /* Subtle lift on hover */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(255, 255, 255, 0.9); /* Enhanced shadow */
+}
+
+.project-box h3 {
+  font-size: 1.5rem;
+  color: #5faee1; /* Light blue for headings */
+}
+
+.project-box p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.project-box .btn {
+  display: inline-block;
+  background: #5faee1;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-box .btn:hover {
+  background: #ffd04f; /* Yellow hover color */
+}
+
+.side-scroller {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap; /* Ensure horizontal scrolling */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5); /* Translucent background */
+  border-radius: 50px; /* Circle effect */
+  border: 2px solid white; /* White outline */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.side-scroller::-webkit-scrollbar {
+  height: 12px;
+}
+
+.side-scroller::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  border: 2px solid white; /* White border for the thumb */
+}
+
+.side-scroller::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Light track */
+  border-radius: 6px;
+}
+
+/* Ensure project boxes stay inline */
+.projects-container {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.project-box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project-box.in-view {
+  opacity: 1;
+  transform: translateY(0);
 }
 
