@@ -1,26 +1,21 @@
-const minimizeBtn = document.getElementById('minimize-btn');
-const widgetBody = document.querySelector('.widget-body');
+// Select elements
+const audioPlayer = document.getElementById('audio-player');
 const playBtn = document.getElementById('play-btn');
 const shuffleBtn = document.getElementById('shuffle-btn');
 const volumeSlider = document.getElementById('volume-slider');
-const audioPlayer = document.getElementById('audio-player');
+const minimizeBtn = document.getElementById('minimize-btn');
+const lofiPlayer = document.getElementById('lofi-player');
 
+// Tracks
 const tracks = [
-  'lofi_breno-aesthetic_groove _thematic.mp3',
-  'lofi_breno-tape_vibes_thematic.mp3',
-  'lofi_breno-timed_thematic.mp3'
+  'audio/lofi_breno-aesthetic-groove.mp3',
+  'audio/lofi_breno-tape-vibes.mp3',
+  'audio/lofi_breno-timed.mp3'
 ];
-const audioPlayer = document.getElementById('audio-player');
-const playBtn = document.getElementById('play-btn');
-const shuffleBtn = document.getElementById('shuffle-btn');
-
 let currentTrack = 0;
+
+// Play/Pause
 let isPlaying = false;
-
-// Load the first track
-audioPlayer.src = tracks[currentTrack];
-
-// Play/Pause Toggle
 playBtn.addEventListener('click', () => {
   if (isPlaying) {
     audioPlayer.pause();
@@ -32,11 +27,21 @@ playBtn.addEventListener('click', () => {
   isPlaying = !isPlaying;
 });
 
-// Shuffle Tracks
+// Shuffle
 shuffleBtn.addEventListener('click', () => {
   currentTrack = Math.floor(Math.random() * tracks.length);
   audioPlayer.src = tracks[currentTrack];
   audioPlayer.play();
   playBtn.textContent = '⏸';
   isPlaying = true;
+});
+
+// Volume Control
+volumeSlider.addEventListener('input', (e) => {
+  audioPlayer.volume = e.target.value;
+});
+
+// Minimize Button
+minimizeBtn.addEventListener('click', () => {
+  lofiPlayer.classList.toggle('minimized');
 });
