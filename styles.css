@@ -66,11 +66,16 @@ footer {
   border: none;
   cursor: pointer;
 }
+
 #minimize-btn:hover {
   background: #ffd04f;
 }
 .widget-body {
   padding: 10px;
+}
+
+#lofi-player.minimized .widget-body {
+  display: none;
 }
 
 .controls button {
