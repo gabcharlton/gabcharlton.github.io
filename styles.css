@@ -184,33 +184,6 @@ footer {
   background: #ffd04f; /* Yellow hover color */
 }
 
-.side-scroller {
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap; /* Ensure horizontal scrolling */
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.5); /* Translucent background */
-  border-radius: 50px; /* Circle effect */
-  border: 2px solid white; /* White outline */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.side-scroller::-webkit-scrollbar {
-  height: 12px;
-}
-
-.side-scroller::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 6px;
-  border: 2px solid white; /* White border for the thumb */
-}
-
-.side-scroller::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1); /* Light track */
-  border-radius: 6px;
-}
-
 /* Ensure project boxes stay inline */
 .projects-container {
   display: inline-flex;
