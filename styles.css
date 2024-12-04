@@ -39,13 +39,29 @@ footer {
 }
 
 .lofi-widget {
-  width: 300px;
+  width: 90%; /* Adjust for smaller screens */
+  max-width: 300px; /* Maintain the upper limit */
   border: 2px solid #ffffff;
   background: #f3f3ea;
   box-shadow: 10px 10px 0 #A4BFEA;
   font-size: 14px;
   position: relative;
 }
+
+@media (max-width: 600px) {
+  body {
+    text-align: left; /* Prevent overcrowding */
+    padding: 10px;
+  }
+  .gif-container img {
+    width: 150px;
+  }
+  .lofi-widget {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
 
 .widget-header {
   background: #af7a73;
@@ -75,8 +91,12 @@ footer {
 }
 
 #lofi-player.minimized .widget-body {
-  display: none;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
+
 
 .controls button {
   background: #feb3d1;
@@ -119,15 +139,15 @@ footer {
 }
 
 .loading {
-  display: none;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
 }
+
 .loading.active {
   display: block;
   animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
 
