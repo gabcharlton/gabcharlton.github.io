@@ -38,14 +38,14 @@ footer {
 .lofi-widget {
   width: 300px;
   border: 2px solid #ffffff;
-  background: #80c799;
+  background: #f3f3ea;
   box-shadow: 10px 10px 0 #A4BFEA;
   font-size: 14px;
   position: relative;
 }
 
 .widget-header {
-  background: #1d4f60;
+  background: #af7a73;
   color: white;
   padding: 5px;
   display: flex;
@@ -71,7 +71,7 @@ footer {
 }
 
 .controls button {
-  background: #7e86b0;
+  background: #feb3d1;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -85,12 +85,13 @@ footer {
 
 #volume-slider {
   width: 80%;
+  color: #feb3d1;
 }
 
 #track-list {
   margin-top: 10px;
   font-size: 12px;
-  color: white;
+  color: #222838;
 }
 
 .hidden {
