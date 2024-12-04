@@ -92,9 +92,21 @@ footer {
 }
 
 #volume-slider {
-  width: 80%;
-  color: #feb3d1;
+  appearance: none;
+  background: #feb3d1;
+  height: 6px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
 }
+#volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ffd04f;
+  border-radius: 50%;
+}
+
 
 #track-list {
   margin-top: 10px;
