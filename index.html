@@ -23,30 +23,37 @@
     </section>
   </main>
 
-<div id="lofi-player" class="lofi-widget">
-  <div class="widget-header">
-    <span class="widget-title">Tunes To Calm Your Mind</span>
-    <button id="minimize-btn">_</button>
-  </div>
-  
-  <div class="widget-body">
-    <audio id="audio-player" src="audio/lofi_breno-aesthetic_groove _thematic.mp3"></audio>
-    <div class="controls">
-      <button id="play-btn">▶</button>
-      <button id="shuffle-btn">🔀</button>
-      <input type="range" id="volume-slider" min="0" max="1" step="0.1">
+  <div id="lofi-player" class="lofi-widget">
+    
+    <div class="widget-header">
+      <span class="widget-title">Tunes To Calm Your Mind</span>
+      <button id="minimize-btn">_</button>
     </div>
     
-    <div id="track-list">
-      <p>Aesthetic Groove - Lofi Breno</p>
-      <p>Tape Vibes - Lofi Breno</p>
-      <p>Timed - Lofi Breno</p>
-    </div>
+    <div class="widget-body">
+      
+      <audio id="audio-player" src="audio/lofi_breno-aesthetic_groove _thematic.mp3">
+      </audio>
+      
+      <div class="controls">
+        <button id="play-btn">▶</button>
+        <button id="shuffle-btn">🔀</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1">
+      </div>
+      
+      <div id="track-list">
+        <p>Aesthetic Groove - Lofi Breno</p>
+        <p>Tape Vibes - Lofi Breno</p>
+        <p>Timed - Lofi Breno</p>
+      </div>
+      
+      <div id="now-playing">
+      </div>
+      <div id="loader" class="loading">
+      </div>
+      
+    </div>  
     
-    <div id="now-playing">
-    </div>
-    <div id="loader" class="loading">
-    </div>
   </div>
 
   <footer>
