@@ -96,15 +96,6 @@ footer {
   background: #ffd04f; /* Yellow hover effect */
 }
 
-.projects-container {
-  background: white;
-  border: 2px solid #feb3d1; /* Pink border */
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8); /* Beveled effect */
-  width: 90%;
-  max-width: 800px;
-  padding: 20px;
-}
 
 .projects-container h2, .projects-container h3 {
   color: #5faee1;
@@ -136,5 +127,41 @@ footer {
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+}
+.projects-container {
+  max-width: 800px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  background: white; /* Ensure a contrasting background */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+  padding: 20px; /* Add space inside the container */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: stretch; /* Ensure children take full width */
+}
+
+.projects-title {
+  font-size: 24px; /* Larger font for title */
+  font-weight: bold;
+  margin-bottom: 10px; /* Spacing below the title */
+}
+
+.projects-description,
+.projects-screenshots,
+.projects-videos {
+  margin-bottom: 20px; /* Add space between sections */
+}
+
+.projects-description h3,
+.projects-screenshots h3,
+.projects-videos h3 {
+  margin-bottom: 10px; /* Space below section titles */
+}
+
+.projects-screenshots img,
+.projects-videos video {
+  max-width: 100%; /* Ensure media doesn't overflow the container */
+  border-radius: 5px; /* Add rounded corners to media */
 }
 
