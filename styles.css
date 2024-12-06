@@ -2,9 +2,11 @@
 body {
   font-family: 'AdobeDia', sans-serif;
   background: linear-gradient(180deg, #5FAEE1, #F0CFEB);
-  color: #333;
+  color: white;
   margin: 0;
   padding: 0;
+  text-align: center;
+  height: 100vh;
 }
 
 
