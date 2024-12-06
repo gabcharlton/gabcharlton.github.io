@@ -96,38 +96,6 @@ footer {
   background: #ffd04f; /* Yellow hover effect */
 }
 
-
-.projects-container h2, .projects-container h3 {
-  color: #5faee1;
-  margin-bottom: 10px;
-}
-
-.projects-container p {
-  color: #555;
-  line-height: 1.6;
-}
-
-.projects-screenshots .screenshot-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-
-.projects-screenshots img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 5px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.projects-video video {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-}
 .projects-container {
   max-width: 800px; /* Set a max width for the container */
   margin: 0 auto; /* Center the container horizontally */
@@ -141,27 +109,42 @@ footer {
   align-items: stretch; /* Ensure children take full width */
 }
 
+.projects-container h2, .projects-container h3 {
+  color: #5faee1;
+  margin-bottom: 10px;
+}
+
+.projects-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
 .projects-title {
   font-size: 24px; /* Larger font for title */
   font-weight: bold;
   margin-bottom: 10px; /* Spacing below the title */
 }
 
-.projects-description,
-.projects-screenshots,
-.projects-videos {
-  margin-bottom: 20px; /* Add space between sections */
+.projects-screenshots .screenshot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.projects-description h3,
-.projects-screenshots h3,
-.projects-videos h3 {
-  margin-bottom: 10px; /* Space below section titles */
-}
-
-.projects-screenshots img,
-.projects-videos video {
-  max-width: 100%; /* Ensure media doesn't overflow the container */
+.projects-screenshots img {
+  width: 100%;
+  max-width: 200px;
   border-radius: 5px; /* Add rounded corners to media */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
+.projects-video video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px; /* Add rounded corners to media */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
