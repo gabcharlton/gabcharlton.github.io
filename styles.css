@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'GomePixel', sans-serif;
+  font-family: 'CodersCrux', sans-serif;
   background: linear-gradient(180deg, #5FAEE1, #F0CFEB);
   color: white;
   margin: 0;
@@ -10,8 +10,8 @@ body {
 }
 
 @font-face {
-  font-family: 'GomePixel';
-  src: url('fonts/GomePixel-Regular.otf') format('truetype');
+  font-family: 'CodersCrux';
+  src: url('fonts/coders_crux.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
