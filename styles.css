@@ -87,26 +87,6 @@ footer {
   background: #ffd04f; /* Yellow hover effect */
 }
 
-.projects-container {
-  background: white;
-  border: 2px solid #feb3d1; /* Pink border */
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8); /* Beveled effect */
-  width: 90%;
-  max-width: 800px;
-  padding: 20px;
-}
-
-.projects-container h2, .projects-container h3 {
-  color: #5faee1;
-  margin-bottom: 10px;
-}
-
-.projects-container p {
-  color: #555;
-  line-height: 1.6;
-}
-
 .projects-screenshots .screenshot-gallery {
   display: flex;
   flex-wrap: wrap;
