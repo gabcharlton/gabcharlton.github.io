@@ -38,104 +38,6 @@ footer {
   padding: 5px 5px;
 }
 
-.lofi-widget {
-  width: 90%; /* Adjust for smaller screens */
-  max-width: 300px; /* Maintain the upper limit */
-  border: 2px solid #ffffff;
-  background: #f3f3ea;
-  box-shadow: 10px 10px 0 #A4BFEA;
-  font-size: 14px;
-  position: relative;
-}
-
-.widget-header {
-  background: #af7a73;
-  color: white;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.widget-title {
-  font-weight: bold;
-}
-
-#minimize-btn {
-  background: #7e86b0;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-#minimize-btn:hover {
-  background: #ffd04f;
-}
-.widget-body {
-  padding: 10px;
-}
-
-#lofi-player.minimized .widget-body {
-  display: block;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.3s ease;
-}
-
-
-.controls button {
-  background: #feb3d1;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.controls button:hover {
-  background: #ffd04f;
-}
-
-#volume-slider {
-  appearance: none;
-  background: #feb3d1;
-  height: 6px;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-}
-#volume-slider::-webkit-slider-thumb {
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  background: #ffd04f;
-  border-radius: 50%;
-}
-
-
-#track-list {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #222838;
-}
-
-.hidden {
-  display: none;
-}
-
-.loading {
-  width: 40px;
-  height: 40px;
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  border-top-color: #fff;
-  border-radius: 50%;
-}
-
-.loading.active {
-  display: block;
-  animation: spin 2s linear infinite;
-}
-
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -182,33 +84,6 @@ footer {
 
 .project-box .btn:hover {
   background: #ffd04f; /* Yellow hover color */
-}
-
-.side-scroller {
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap; /* Ensure horizontal scrolling */
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.5); /* Translucent background */
-  border-radius: 50px; /* Circle effect */
-  border: 2px solid white; /* White outline */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.side-scroller::-webkit-scrollbar {
-  height: 12px;
-}
-
-.side-scroller::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 6px;
-  border: 2px solid white; /* White border for the thumb */
-}
-
-.side-scroller::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.1); /* Light track */
-  border-radius: 6px;
 }
 
 /* Ensure project boxes stay inline */
