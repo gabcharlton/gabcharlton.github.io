@@ -86,3 +86,45 @@ footer {
 .project .btn:hover {
   background: #ffd04f; /* Yellow hover effect */
 }
+
+.projects-container {
+  background: white;
+  border: 2px solid #feb3d1; /* Pink border */
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8); /* Beveled effect */
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.projects-container h2, .projects-container h3 {
+  color: #5faee1;
+  margin-bottom: 10px;
+}
+
+.projects-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.projects-screenshots .screenshot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.projects-screenshots img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-video video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
