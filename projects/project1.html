@@ -8,21 +8,41 @@
 </head>
 <body>
   <header>
-    <h1>Project Name</h1>
+    <h1>Google Data Analytics Professional Certification Capstone Project</h1>
   </header>
   
   <main>
     <div class="projects-container">
       <!-- Project Title -->
       <section class="projects-title">
-        <h2>Project Name</h2>
+        <h2>Cyclistic Rides</h2>
+        <h4>Date: June 2022 </h4>
       </section>
       
       <!-- Project Description -->
       <section class="projects-description">
         <h3>Description</h3>
         <p>
-          This section contains a detailed description of the project, its objectives, technologies used, and the overall goal.
+          Kaggle Dataset: https://www.kaggle.com/datasets/gabriellecharlton/cyclistic-case-study-report-gc
+GitHub: https://github.com/gabcharlton/Google-Data-Analytics-Professional-Cert-Case-Study
+
+This project summarizes my analysis of the last 12 months of Cyclistic trip data. I have completed the Ask, Prepare, Process, Analyze, and Share steps. These steps were communicated through Google via the Coursera Google Data Analytics Professional Certification, and this project is my capstone project. The guided project analysis was completed via R Studio and my personal further analysis was conducted on Jupyter notebooks.
+
+Ask
+The main focus of this analysis was to see the differences and similarities between casual riders and annual members of Cyclistic. This will help drive future business decisions, in the pursuit of increasing the number of annual members, mainly from the current set of casual riders.
+
+Prepare
+I downloaded the range of June 2021 to May 2022 csv files from the aforementioned link.
+
+Process:
+I merged the scope of all months into one file, all trips.csv. The second version, all trips v2.csv, originated from removing all negative ride lengths.
+
+Analyze
+From the all trips v2.csv dataset, we created a avg ride length.csv dataset, which outlines the average amount of rides for each membership type, either casual ("casual") or annual ("member").
+
+The graphs made from the data, using the member types (annual member and casual) as hue, were:
+* Number of Rides versus Weekday
+* Average Duration of Rides versus Weekday
         </p>
       </section>
       
@@ -31,20 +51,9 @@
         <h3>Screenshots</h3>
         <div class="screenshot-gallery">
           <img src="screenshot1.png" alt="Screenshot 1">
-          <img src="screenshot2.png" alt="Screenshot 2">
-          <img src="screenshot3.png" alt="Screenshot 3">
         </div>
       </section>
       
-      <!-- Project Video -->
-      <section class="projects-video">
-        <h3>Video Content</h3>
-        <video controls>
-          <source src="project-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </section>
-    </div>
   </main>
   
   <footer>
