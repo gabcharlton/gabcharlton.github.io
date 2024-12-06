@@ -9,6 +9,13 @@ body {
   height: 100vh;
 }
 
+@font-face {
+  font-family: 'AdobeDia';
+  src: url('fonts/Adobe Dia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 header {
   padding: 20px;
@@ -131,9 +138,3 @@ footer {
   margin-top: 10px;
 }
 
-@font-face {
-  font-family: 'AdobeDia';
-  src: url('fonts/Adobe Dia.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
