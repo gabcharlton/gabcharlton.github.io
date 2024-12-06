@@ -43,7 +43,6 @@ footer {
   flex-direction: column; /* Stack projects vertically */
   gap: 20px; /* Space between projects */
   padding: 20px;
-  background: #f9f9f9; /* Light background for contrast */
 }
 
 .project {
