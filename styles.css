@@ -1,12 +1,12 @@
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'AdobeDia', sans-serif;
   background: linear-gradient(180deg, #5FAEE1, #F0CFEB);
-  color: white;
+  color: #333;
   margin: 0;
   padding: 0;
-  text-align: center;
-  height: 100vh;
 }
+
 
 header {
   padding: 20px;
@@ -127,4 +127,11 @@ footer {
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+}
+
+@font-face {
+  font-family: 'AdobeDia';
+  src: url('fonts/Adobe Dia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
