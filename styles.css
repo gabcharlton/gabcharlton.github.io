@@ -38,67 +38,52 @@ footer {
   padding: 5px 5px;
 }
 
-.projects-container {
+.projects-page {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column; /* Stack projects vertically */
+  gap: 20px; /* Space between projects */
   padding: 20px;
+  background: #f9f9f9; /* Light background for contrast */
 }
 
-.project-box {
-  width: 300px;
-  padding: 20px;
-  background: #ffffff;
-  border: 3px solid #feb3d1; /* Pink outline */
+.project {
+  background: #ffffff; /* White background */
+  border: 2px solid #feb3d1; /* Pink border */
   border-radius: 10px; /* Rounded corners */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.8); /* Beveled effect */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), 
+              -5px -5px 15px rgba(255, 255, 255, 0.8); /* Beveled effect */
+  padding: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.project-box:hover {
-  transform: translateY(-10px); /* Subtle lift on hover */
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(255, 255, 255, 0.9); /* Enhanced shadow */
+.project:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), 
+              -5px -5px 20px rgba(255, 255, 255, 0.9); /* Enhanced shadow */
 }
 
-.project-box h3 {
-  font-size: 1.5rem;
-  color: #5faee1; /* Light blue for headings */
+.project h3 {
+  margin: 0;
+  color: #5faee1; /* Light blue heading */
 }
 
-.project-box p {
+.project p {
+  color: #333333; /* Darker text for contrast */
   font-size: 1rem;
-  color: #333333;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-.project-box .btn {
+.project .btn {
   display: inline-block;
-  background: #5faee1;
-  color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  background: #5faee1; /* Light blue button */
+  color: white;
   text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
   transition: background 0.3s ease;
 }
 
-.project-box .btn:hover {
-  background: #ffd04f; /* Yellow hover color */
-}
-
-/* Ensure project boxes stay inline */
-.projects-container {
-  display: inline-flex;
-  gap: 20px;
-}
-
-.project-box {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.project-box.in-view {
-  opacity: 1;
-  transform: translateY(0);
+.project .btn:hover {
+  background: #ffd04f; /* Yellow hover effect */
 }
