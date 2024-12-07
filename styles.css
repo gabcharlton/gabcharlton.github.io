@@ -126,6 +126,7 @@ footer {
   max-width: 800px; /* Restricts width but allows flexible height */
   margin: 0 auto;
   background: white;
+  border: 2px solid #feb3d1; /* Pink border */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
