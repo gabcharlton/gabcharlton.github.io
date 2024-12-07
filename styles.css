@@ -111,8 +111,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  overflow: visible; /* Ensures overflowing content is shown */
-  height: auto; /* Allows height to grow dynamically */
+  overflow-y: auto; /* Adds a scrollbar if content overflows vertically */
+  max-height: 90vh; /* Sets a maximum height */
 }
 
 
