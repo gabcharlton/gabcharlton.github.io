@@ -101,6 +101,20 @@ footer {
 .project .btn:hover {
   background: #ffd04f; /* Yellow hover effect */
 }
+.projects-scroll-container {
+  width: 80%; /* Adjust to your preference */
+  max-width: 800px;
+  height: 80vh; /* Limits the height to 80% of the viewport */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px;
+  overflow-y: scroll; /* Enables vertical scrolling */
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Optional translucent border */
+  backdrop-filter: blur(5px); /* Adds a slight blur to enhance readability */
+}
+
 
 .projects-container {
   max-width: 800px; /* Restricts width but allows flexible height */
