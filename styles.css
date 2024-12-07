@@ -108,16 +108,16 @@ footer {
   margin: 0 auto; /* Centers the container */
   padding: 20px;
   overflow-y: scroll; /* Enables vertical scrolling */
-  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
   border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   border: 1px solid rgba(255, 255, 255, 0.5); /* Optional translucent border */
   backdrop-filter: blur(5px); /* Adds a slight blur to enhance readability */
 }
 .project-item {
   margin-bottom: 20px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.9); /* Slightly more opaque background for each project */
+  background: rgba(255, 255, 255, 0.1); /* Slightly more opaque background for each project */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Individual project shadow */
 }
