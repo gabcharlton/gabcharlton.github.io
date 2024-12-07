@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: 'CodersCrux';
-  src: url('fonts/coders_crux.ttf') format('truetype');
+  src: url('fonts/coders_crux.woff') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
