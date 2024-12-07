@@ -97,17 +97,20 @@ footer {
 }
 
 .projects-container {
-  max-width: 800px; /* Set a max width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  background: white; /* Ensure a contrasting background */
-  border-radius: 10px; /* Rounded corners for aesthetics */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
-  padding: 20px; /* Add space inside the container */
-  text-align: left; /* Align text to the left */
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack child elements vertically */
-  align-items: stretch; /* Ensure children take full width */
+  max-width: 800px; /* Restricts width but allows flexible height */
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: visible; /* Ensures overflowing content is shown */
+  height: auto; /* Allows height to grow dynamically */
 }
+
 
 .projects-container h2, .projects-container h3 {
   color: #5faee1;
