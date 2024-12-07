@@ -22,7 +22,9 @@ body {
   font-style: normal;
 }
 
-
+p{
+  font-size: 24px; 
+}
 header {
   padding: 20px;
 }
