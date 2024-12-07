@@ -3,16 +3,17 @@ body {
   margin: 0; /* Remove default margins */
   padding: 0;
   background: 
-    url('pixel_art_assets/purple clouds/1.png') no-repeat center center / cover,
-    url('pixel_art_assets/purple clouds/2.png') no-repeat center center / cover,
+    url('pixel_art_assets/purple clouds/4.png') no-repeat center center / cover,
     url('pixel_art_assets/purple clouds/3.png') no-repeat center center / cover,
-    url('pixel_art_assets/purple clouds/4.png') no-repeat center center / cover;
+    url('pixel_art_assets/purple clouds/2.png') no-repeat center center / cover,
+    url('pixel_art_assets/purple clouds/1.png') no-repeat center center / cover;
   height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
   overflow: hidden; /* Prevent scrolling if not needed */
   text-align: center;
   color: white;
   font-family: 'CodersCrux', sans-serif;
+  font-size: 24px; 
 }
 
 @font-face {
@@ -22,9 +23,6 @@ body {
   font-style: normal;
 }
 
-p{
-  font-size: 24px; 
-}
 header {
   padding: 20px;
 }
