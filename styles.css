@@ -6,7 +6,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  height: 100vh;
+  height: auto; /* Allows the body to expand with content */
+  min-height: 100%; /* Ensures full height at minimum */
+  overflow-y: auto; /* Enables vertical scrolling */
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
