@@ -114,7 +114,7 @@ footer {
   flex-direction: column;
   align-items: stretch;
   overflow-y: auto; /* Adds a scrollbar if content overflows vertically */
-  max-height: 90vh; /* Sets a maximum height */
+  height: 100vh; /* Sets a maximum height */
 }
 
 
