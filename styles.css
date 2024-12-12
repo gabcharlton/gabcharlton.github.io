@@ -104,7 +104,7 @@ footer {
 .projects-scroll-container {
   width: 80%; /* Adjust to your preference */
   max-width: 800px;
-  max-height: 80vh; /* Limits the height to 80% of the viewport */
+  max-height: 60vh; /* Limits the height to 80% of the viewport */
   margin: 0 auto; /* Centers the container */
   padding: 20px;
   overflow-y: scroll; /* Enables vertical scrolling */
