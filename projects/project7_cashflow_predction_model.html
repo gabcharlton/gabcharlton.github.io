@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash-Flow Forecasting for a Small Business</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        h1 {
+            font-size: 2.25rem;
+            color: #1e3a8a;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #2c5282;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #3b82f6;
+            padding-left: 12px;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+        }
+        em {
+            color: #4a5568;
+        }
+        .blockquote {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px 20px;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+            font-style: italic;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+            margin: 2rem 0;
+        }
+        .tldr-box {
+            background-color: #fffaf0;
+            border: 1px solid #feebc8;
+            border-left: 4px solid #dd6b20;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+        }
+        .tldr-box strong {
+            color: #dd6b20;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        pre {
+            background-color: #1a202c;
+            color: #edf2f7;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        code {
+            background-color: #edf2f7;
+            color: #2d3748;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9em;
+        }
+        pre code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+            border-radius: 0;
+            font-size: inherit;
+        }
+        a {
+            color: #3182ce;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .figure-box {
+            text-align: center;
+            margin: 2rem 0;
+            background: #f7fafc;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+        }
+        .figure-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .caption {
+            font-size: 0.875rem;
+            color: #718096;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.875rem;
+            color: #a0aec0;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Cash-Flow Forecasting for a Small Business</h1>
+
+    <div class="blockquote">
+        <strong>Business question:</strong> <em>"What projections can we expect from our business in the next 5 years? We want to expand, but need to know if our current sales model is working."</em>
+    </div>
+
+    <p>A fictional stakeholder scenario built on a real analytical workflow: forecasting 5-year cash flow for a 3-location Calgary bookstore chain using 5 years of financial history, and answering whether current performance supports expansion.</p>
+
+    <hr>
+
+    <h2>TL;DR</h2>
+
+    <div class="tldr-box">
+        <p>Current cash flow trends do <strong>not</strong> support expansion. The business is projected to run a persistent <strong>~$27K–28K monthly cash deficit</strong> through 2025 and beyond, totaling an estimated <strong>-$1.7M cumulative cash flow over 5 years</strong> (plausible range: -$380K to -$3.0M). The deficit is structural (i.e., consistent across months rather than driven by any single swinging cost or revenue line), meaning the fix isn't "one bad quarter to manage," but a deeper look at fixed costs vs. revenue at the unit-economics level.</p>
+    </div>
+
+    <p>📄 <strong><a href="reports/executive_summary.md">Full write-up: Executive Summary</a></strong></p>
+
+    <hr>
+
+    <h2>Key result</h2>
+
+    <div class="figure-box">
+        <img src="reports/figures/five_year_forecast.png" alt="5-Year Net Cash Flow Forecast">
+        <div class="caption">Historical net cash flow (2019–2024) and 5-year SARIMA forecast with 95% confidence interval. The shaded band widens over time, reflecting appropriately growing uncertainty further into the forecast.</div>
+    </div>
+
+    <hr>
+
+    <h2>What this project does</h2>
+
+    <ul>
+        <li>Cleans and reconciles 6 years of daily/biweekly/quarterly financial data (checking, credit, sales, payroll, loans) into a single monthly cash-flow view</li>
+        <li>Diagnoses whether the current sales model is financially sustainable, using correlation analysis against revenue, payroll, and loan repayment</li>
+        <li>Forecasts 5-year cash flow using three methods of increasing sophistication (naive seasonal baseline, linear regression, and SARIMA) each validated on a 12-month holdout period before being trusted</li>
+        <li>Selects a final model based on <strong>forecast accuracy (MAE)</strong>, not just in-sample fit, and is explicit in the write-up about where a simpler model actually outperformed a more complex one</li>
+        <li>Delivers findings as a stakeholder-ready executive summary with a clear recommendation, confidence ranges, and disclosed limitations, not just a chart</li>
+    </ul>
+
+    <h2>Why this project (a note on approach)</h2>
+
+    <p>A meaningful part of this project was the debugging and validation process itself — catching a sign error in how credit card liability was combined with checking balance, catching an over-differenced SARIMA configuration that was quietly hurting accuracy, and being willing to report that a simple regression underperformed a naive baseline rather than hiding it. The full notebooks preserve this process; the write-up reflects only validated, sanity-checked findings.</p>
+
+    <hr>
+
+    <h2>Tech stack</h2>
+
+    <ul>
+        <li>Python — <code>pandas</code>, <code>numpy</code></li>
+        <li>Forecasting — <code>statsmodels (SARIMAX)</code>, <code>scikit-learn (LinearRegression)</code></li>
+        <li>Visualization — <code>matplotlib</code></li>
+    </ul>
+
+    <h2>Repo structure</h2>
+
+<pre><code>cashflow-forecast-bookstore/
+├── README.md                       # you are here
+├── PROBLEM_STATEMENT.md            # stakeholder framing, scope
+├── data/
+│   ├── raw/                        # original CSVs (not committed — see Data section below)
+│   └── processed/                  # cleaned monthly cash-flow table
+├── notebooks/
+│   ├── 01_eda.ipynb                # data profiling, quality checks
+│   ├── 02_cleaning_feature_engineering.ipynb
+│   ├── 03_forecasting_model.ipynb  # baseline, regression, SARIMA
+│   └── 04_scenario_analysis.ipynb
+├── src/
+│   ├── clean.py
+│   ├── features.py
+│   └── forecast.py
+├── reports/
+│   ├── figures/                    # exported chart images
+│   └── executive_summary.md        # full write-up
+├── presentation/
+│   └── stakeholder_deck.pdf
+├── requirements.txt
+└── .gitignore</code></pre>
+
+    <h2>Data</h2>
+
+    <p>Source: <a href="https://www.kaggle.com/datasets/gabriellecharlton/bookstore-financial-dataset-2019-2024-calgary" target="_blank">Bookstore Financial Dataset 2019–2024 (Calgary)</a> — fully synthetic, MIT licensed. Not committed to this repo directly; download from Kaggle and place in <code>data/raw/</code> to reproduce.</p>
+
+    <h2>Full write-up & presentation</h2>
+
+    <ul>
+        <li>📄 <a href="reports/executive_summary.md">Executive Summary</a> — findings, recommendation, limitations, methodology</li>
+        <li>📊 <a href="presentation/stakeholder_deck.pdf">Stakeholder deck</a></li>
+        <li>📓 <a href="notebooks/">Notebooks</a> — full analysis, including validation steps and model comparisons</li>
+    </ul>
+
+    <h2>Reproducing this analysis</h2>
+
+<pre><code class="language-bash">pip install -r requirements.txt</code></pre>
+
+    <p>Run notebooks <code>01</code> through <code>04</code> in order — each builds on outputs from the previous one.</p>
+
+    <hr>
+
+    <div class="footer">
+        <p>This project uses fully synthetic data for portfolio demonstration purposes. Findings illustrate methodology, not a real business.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
